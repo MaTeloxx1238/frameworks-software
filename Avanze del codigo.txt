@@ -1,0 +1,128 @@
+import java.util.Scanner;
+
+public class QuizBasico {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int vida = 80;
+        
+        System.out.println("=== BIENVENIDO AL QUIZ ===");
+        
+        // Pregunta 1
+        System.out.println("\n1. Nombre del mundo principal de minecraft?");
+        System.out.println("a) Verity");
+        System.out.println("b) End");
+        System.out.println("c) Nether");
+        System.out.println("d) overworld");
+        System.out.print("Tu respuesta (a, b, c o d): ");
+        String respuesta1 = scanner.nextLine().trim().toLowerCase();
+        
+        if (respuesta1.equals("d")) {
+            System.out.println("Correcto!");
+        } else {
+            System.out.println("Incorrecto. La respuesta correcta era d).");
+            vida = vida-20;
+        }
+
+        //Pregunta 2
+        System.out.println("\n2. Cual es la nueva dimension de minecraft?");
+        System.out.println("a) The sift");
+        System.out.println("b) El cielo");
+        System.out.println("c) Nether");
+        System.out.println("d) El vacio");
+        System.out.print("Tu respuesta (a, b, c o d): ");
+        String respuesta2 = scanner.nextLine().trim().toLowerCase();
+        
+        if (respuesta2.equals("a")) {
+            System.out.println("Correcto!");
+        } else {
+            System.out.println("Incorrecto. La respuesta correcta era a).");
+            vida = vida-20;
+        }
+
+        //Pregunta 3
+        System.out.println("\n3. En donde empezado la batalla?");
+        System.out.println("a) En un mundo ovalado");
+        System.out.println("b) En un mundo muy cuadrado");
+        System.out.println("c) En la tierra");
+        System.out.println("d) En verityland");
+        System.out.print("Tu respuesta (a, b, c o d): ");
+        String respuesta3 = scanner.nextLine().trim().toLowerCase();
+        
+        if (respuesta3.equals("b")) {
+            System.out.println("Correcto!");
+        } else {
+            System.out.println("Incorrecto. La respuesta correcta era b).");
+            vida = vida-20;
+        }
+
+        //Pregunta 4
+        System.out.println("\n4. Antigua nombre de la manzana dorada encantada?");
+        System.out.println("a) Manzana fuerte");
+        System.out.println("b) Manzana requiem");
+        System.out.println("c) Manzana de notch");
+        System.out.println("d) Manzana pro max");
+        System.out.print("Tu respuesta (a, b, c o d): ");
+        String respuesta4 = scanner.nextLine().trim().toLowerCase();
+        
+        if (respuesta4.equals("c")) {
+            System.out.println("Correcto!");
+        } else {
+            System.out.println("Incorrecto. La respuesta correcta era c).");
+            vida = vida-20;
+        }
+
+        //Pregunta 5
+        System.out.println("\n5. Cuantas versiones distintas tiene minecraft?");
+        System.out.println("a) 2");
+        System.out.println("b) 3");
+        System.out.println("c) 4");
+        System.out.println("d) 5");
+        System.out.print("Tu respuesta (a, b, c o d): ");
+        String respuesta5 = scanner.nextLine().trim().toLowerCase();
+        
+        if (respuesta5.equals("c")) {
+            System.out.println("Correcto!");
+        } else {
+            System.out.println("Incorrecto. La respuesta correcta era c).");
+            vida = vida-20;
+        }
+
+        //Pregunta 6
+        System.out.println("\n6. Cual era el nombre original de minecraft?");
+        System.out.println("a) Gamecube");
+        System.out.println("b) Minar y craftear");
+        System.out.println("c) Cuadrado el juego");
+        System.out.println("d) Cave game");
+        System.out.print("Tu respuesta (a, b, c o d): ");
+        String respuesta6 = scanner.nextLine().trim().toLowerCase();
+        
+        if (respuesta6.equals("d")) {
+            System.out.println("Correcto!");
+        } else {
+            System.out.println("Incorrecto. La respuesta correcta era d).");
+            vida = vida-20;
+        }
+
+        //Pregunta 7
+        System.out.println("\n7. Cual fue el primer youtuber en conseguir bedrock en survival vanila?");
+        System.out.println("a) Bobicraft");
+        System.out.println("b) ElRichMC");
+        System.out.println("c) Vegeta777");
+        System.out.println("d) Mikecrack");
+        System.out.print("Tu respuesta (a, b, c o d): ");
+        String respuesta7 = scanner.nextLine().trim().toLowerCase();
+        
+        if (respuesta7.equals("b")) {
+            System.out.println("Correcto!");
+        } else {
+            System.out.println("Incorrecto. La respuesta correcta era b).");
+            vida = vida-20;
+        }
+        
+        // Resultado final
+        System.out.println("\n--- JUEGO TERMINADO ---");
+        System.out.println("Tu vida restante es " + vida + " de 80");
+        
+        scanner.close();
+    }
+}
